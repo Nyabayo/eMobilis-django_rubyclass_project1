@@ -1,6 +1,8 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -8,7 +10,13 @@
     <title>Home</title>
 </head>
 <body>
+<a href="{% url 'home' %}">HOME</a>
+<a href="{% url 'services' %}">SERVICES</a>
+<a href="{% url 'about' %}">ABOUT</a>
+<a href="{% url 'blogs' %}">BLOGS</a>
+<a href={% url 'contact' %}>CONTACT US</a>
 <h2>Welcome to django</h2>
+<img src="{% static 'images/absolute-image.PNG' %}" alt="">
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ex iure molestias!
     Cumque doloribus eos libero quasi veniam. Eum expedita hic inventore iusto libero minus non
     optio recusandae reprehenderit rerum.</span><span>Alias aliquid animi aperiam at consectetur cum dolor
